@@ -1,15 +1,15 @@
 require([
     './modules/renderer',
     './modules/bunnie',
-    './modules/simpleTitle'
-], function (Renderer, Bunnie, SimpleTitle) {
+    './modules/simpleText'
+], function (Renderer, Bunnie, SimpleText) {
     var canvas = document.getElementById('myCanvas');
     var image = document.createElement('img');
     var renderer = new Renderer(canvas);
 
     var bunniesNumber = 100;
 
-    var simpleTitle = new SimpleTitle(100, 100);
+    var simpleTitle = new SimpleText(100, 100, "Hello VinnytsiaJS!");
 
     for (var i = 0; i < bunniesNumber; i++) {
         renderer.addElement(generateRandomBunnie(image));

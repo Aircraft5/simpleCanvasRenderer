@@ -13,7 +13,6 @@ define(function (require) {
 
     Bunnie.prototype.update = function () {
         this.angle = (this.angle + this.deltaAngle) % this.twoPi;
-        this.x++;
     };
 
     Bunnie.prototype.render = function (context) {
